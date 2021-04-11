@@ -1,5 +1,6 @@
 import requests # pip install requests
 import time
+from os import system
 # its a bit buggy at some times but it works pretty well
 
 universeId = 1  # edit me to your games universe id
