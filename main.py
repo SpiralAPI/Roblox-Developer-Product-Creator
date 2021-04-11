@@ -19,7 +19,7 @@ while True:
     else:
         try:
             price = price + 1
-            DevelopAPIUrl = "https://www.roblox.com/places/developerproducts/add?universeId=2095224927&name=" + str(price) + "&developerProductId=0&priceInRobux=" + str(price) + "&description=Donation&imageAssetId="
+            DevelopAPIUrl = "https://www.roblox.com/places/developerproducts/add?universeId=" + str(universeId) + "&name=" + str(price) + "&developerProductId=0&priceInRobux=" + str(price) + "&description=Donation&imageAssetId="
             id = requests.post(DevelopAPIUrl, 
             cookies=cookies,
             headers={'x-csrf-token': str(token)})
