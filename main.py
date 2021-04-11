@@ -14,6 +14,7 @@ token = tokenQ
 print("estimated time: " + str(time.strftime('%H:%M:%S', time.gmtime(amount * 7))))
 
 while True:
+    system("title "+ "Estimated Time: " + str(time.strftime('%H:%M:%S', time.gmtime((amount - price) * 7))))
     if price >= amount:
         break
     else:
